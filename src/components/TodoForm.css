@@ -3,13 +3,32 @@
 .todo-input-form {
   text-align: center;
 }
+.todo-add{
+  padding: 20px;
+  border: 1px solid gray;
+}
 
-.todo-input {
-  font-size: 18px;
-  padding: 5px;
-  width: 500px;
+input {
+  font-size: 20px;
+  padding: 15px;
+  width: 720px;
   max-width: 100%;
-  background-color: lightgray;
+  background-color: white;
+ 
+
+}
+.add-input{
+  margin-bottom: 20px;
+}
+button{
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+}
+
+.add-button {
+  width: 720px;
+  background-color: aqua;
 }
 
 .todo-input-edit {

@@ -39,20 +39,28 @@ const TodoForm = (props) => {
               maxLength={300}
               autoComplete="off"
             />
+            <button onClick={handleSubmit} className='todo-button'>save</button>
           </>
         ) : (
           <>
+          <div className="todo-add">
+            <div >
+              <input
+                placeholder="Add a todo"
+                value={input}
+                onChange={handleChange}
+                name="text"
+                className="todo-input add-input"
+                ref={inputRef}
+                maxLength={300}
+                autoComplete="off"
+              />
+            </div>
+            <div>
+              <button onClick={handleSubmit} className='add-button'>add task</button> 
+            </div>
+          </div>
             
-            <input
-              placeholder="Add a todo"
-              value={input}
-              onChange={handleChange}
-              name="text"
-              className="todo-input"
-              ref={inputRef}
-              maxLength={300}
-              autoComplete="off"
-            />
           </>
         )}
       </div>
