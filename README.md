@@ -2,7 +2,7 @@
 
 ## RUN APP
 
-In the project directory, you can run:
+to run the project you must run this two commands:
 
 ### `npm i`
 
