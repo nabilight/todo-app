@@ -21,14 +21,20 @@ input {
   margin-bottom: 20px;
 }
 button{
+  cursor: pointer;
   padding: 10px 20px;
   font-size: 20px;
   border: none;
 }
 
 .add-button {
-  width: 720px;
-  background-color: aqua;
+  width: 740px;
+  background-color: rgb(41, 204, 204);
+}
+.add-button:hover {
+
+  background-color: rgb(5, 187, 187);
+
 }
 
 .todo-input-edit {

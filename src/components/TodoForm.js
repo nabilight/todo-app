@@ -39,7 +39,7 @@ const TodoForm = (props) => {
               maxLength={300}
               autoComplete="off"
             />
-            <button onClick={handleSubmit} className='todo-button'>save</button>
+            <button onClick={handleSubmit} className='todo-button edit-input'>Save</button>
           </>
         ) : (
           <>
@@ -57,7 +57,7 @@ const TodoForm = (props) => {
               />
             </div>
             <div>
-              <button onClick={handleSubmit} className='add-button'>add task</button> 
+              <button onClick={handleSubmit} className='add-button'>Add task</button> 
             </div>
           </div>
             

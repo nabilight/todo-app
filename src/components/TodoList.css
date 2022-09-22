@@ -1,8 +1,44 @@
 /* todo list */
 
-.todo-list {
-  margin-top: 40px;
+
+.show-filtres,
+.delete-filtres{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+ 
 }
+button.show{
+  cursor: pointer;
+  width: 250px;;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(41, 204, 204);
+  margin-bottom: 20px;
+}
+
+button.delete{
+  cursor: pointer;
+  width: 350px;;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(189, 17, 11);
+  color:white;
+  margin-bottom: 20px;
+}
+button.delete:hover{
+  background-color: rgb(145, 19, 14);
+
+
+}
+button.show:hover{
+  background-color: rgb(5, 187, 187);
+
+}
+
 
 .todo-completed {
   border: 2px gray;
@@ -11,7 +47,9 @@
 .todo-pending {
   border: 2px darkslategray;
 }
-
+.completed-tasks{
+  margin-top: 20px;
+}
 .todo-completed,
 .todo-pending {
   border-bottom-style: solid;
@@ -51,7 +89,7 @@
 }
 
 .todo-item del {
-  color: darkslategrey;
+  color: green;
 }
 
 /* *icons */

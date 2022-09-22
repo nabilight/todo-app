@@ -26,7 +26,12 @@ const TodoList = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   return (
     <>
       <div className="todo-list">
-      <h1 className="todolist-header">To do list</h1>
+        <h1 className="todolist-header">To do list</h1>
+        <div className="show-filtres">
+          <button className="show">All</button>
+          <button className="show">Completed</button>
+          <button className="show">Todo</button>
+        </div>
 
         <div>
           {pendingTodo.length > 0 ? (
@@ -46,15 +51,16 @@ const TodoList = ({ todos, completeTodo, removeTodo, updateTodo }) => {
             <p>Todo list is empty</p>
           )}
         </div>
-
+        <div className="completed-tasks">
+        <div>
         {completedTodo.length > 0 && (
           <div className="todo-list">
-            <h6>Completed Tasks</h6>
+            <h4>Completed Tasks</h4>
             <hr />
           </div>
         )}
 
-        <div>
+        
           {completedTodo.length > 0 &&
             completedTodo.map((todo, index) => (
               <div className="todo-completed" key={index}>
@@ -65,6 +71,12 @@ const TodoList = ({ todos, completeTodo, removeTodo, updateTodo }) => {
                 />
               </div>
             ))}
+        </div>
+
+        <div className="delete-filtres">
+          <button className="delete" >Delete done tasks</button>
+          <button className="delete">Delete all tasks</button>        
+        </div>
         </div>
       </div>
     </>
